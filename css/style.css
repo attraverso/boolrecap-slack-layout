@@ -1,0 +1,61 @@
+/*responsiveness*/
+body {
+  color: #000;
+  font-size: 15px;
+  font-family: 'Mulish', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+.btn-primary {
+  text-transform: uppercase;
+  padding: 0.8em;
+  border-radius: 5px;
+  font-weight: 500; }
+
+.btn-big {
+  padding: 1em 2em; }
+
+.btn-primary {
+  background-color: #611f69;
+  color: #fff; }
+
+.container {
+  width: 90vw; }
+
+/* responsiveness */
+.hidden-mobile {
+  display: none; }
+
+.hidden-desktop {
+  display: block; }
+
+header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background-color: lightgreen; }
+  header > .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto; }
+  header .header-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .header-left li {
+      display: inline-block;
+      margin-right: 2em; }
+  header .dropdown-nav {
+    display: none; }
+    header .dropdown-nav:hover {
+      display: block; }
+
+@media screen and (min-width: 1024px) {
+  .hidden-mobile {
+    display: block; }
+  .hidden-desktop {
+    display: none; } }

@@ -1,0 +1,29 @@
+header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background-color: lightgreen;
+
+  &>.container {
+    height: 100%;
+    @include flex(space-between, center);
+    margin: auto;
+  }
+
+  & .header-left {
+    @include flex(space-between, center);
+
+    & li {
+      display: inline-block;
+      margin-right: 2em;
+    }
+  }
+
+  & .dropdown-nav {
+    display: none;
+
+    &:hover {
+      display: block;
+    }
+  }
+}
